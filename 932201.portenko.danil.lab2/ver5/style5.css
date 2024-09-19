@@ -1,0 +1,16 @@
+*{
+    color: white;
+}
+.firstblock{
+    background: green;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.fatblock{
+    background: blue;
+    padding: 20px;
+    border: solid 20px blue;
+    width: 500px;
+    margin: auto;
+}

@@ -1,0 +1,24 @@
+nav{
+    background: bisque;
+    float: left;
+    width: 400px;
+}
+main{
+    background: darkgray;
+    margin-left: 400px;
+}
+@media (max-width:620px){
+    nav{
+        ul>li{
+            display: inline;
+        }
+        box-sizing: border-box;
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    main{
+        margin-left: 0;
+    }
+}

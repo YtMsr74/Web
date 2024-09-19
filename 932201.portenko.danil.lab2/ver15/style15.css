@@ -1,0 +1,12 @@
+.inline{
+    background: aquamarine;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+}
+.box{
+    background: bisque;
+    clear: both;
+    width: 100%;
+}

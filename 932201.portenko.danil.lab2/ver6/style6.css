@@ -1,0 +1,13 @@
+.firstblock{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.secondblock{
+    border: solid 10px blue;
+    box-sizing: border-box;
+    width: 500px;
+    margin: auto;
+    padding: 50px;
+}

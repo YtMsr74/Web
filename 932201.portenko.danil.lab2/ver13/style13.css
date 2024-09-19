@@ -1,0 +1,26 @@
+nav{
+    background: bisque;
+    float: left;
+    width: 400px;
+}
+main{
+    background: darkgray;
+    margin-left: 400px;
+}
+img{
+    float: right;
+    width: 700px;
+}
+@media (max-width:1200px){
+    nav{
+        width: 120px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    main{
+        margin-left: 120px;
+    }
+    img{
+        width: 180px;
+    }
+}

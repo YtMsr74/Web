@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.42
+}
+.left{
+    background:#C8FC98;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 8px 4px 8px;
+}
+.right{
+    background: #FDE95E;
+    width: 200px;
+    float: right;
+    box-sizing: border-box;
+    padding: 0px 8px 4px 8px;
+}
+main{
+    margin-left: 25.5%;
+    margin-right: 205px;
+}
+header{
+    background: #EAEAEA;
+    padding-left: 5px;
+    height: auto;
+    min-height: 73px;
+}
+footer{
+    background: black;
+    text-align: center;
+    padding: 8px;
+    clear: both;
+}

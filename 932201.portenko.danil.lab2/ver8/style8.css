@@ -1,0 +1,17 @@
+nav{
+    background: bisque;
+    float: left;
+    width: 200px;
+}
+main{
+    background: darkgray;
+    margin-left: 200px;
+}
+footer{
+    background: limegreen;
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    left: 0px;
+}
