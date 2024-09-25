@@ -7,7 +7,6 @@
 main{
     margin: auto;
     max-width: 820px;
-    height: 835px;
     background: red;
 }
 nav{
@@ -29,7 +28,7 @@ nav{
     background: white;
     text-align: justify;
     margin-left: 205px;
-    height: 835px;
+    height: 815px;
 }
 header{
     background: green;
@@ -52,9 +51,6 @@ footer{
     background: green;
 }
 @media(max-width: 768px){
-    main{
-        height: auto;
-    }
     .text{
         height: auto;
     }
