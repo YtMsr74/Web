@@ -5,10 +5,13 @@
     line-height: 19px;
 }
 header{
+    position: sticky;
+    top: 0;
     background: #507299;
     padding: 7px 14%;
 }
 footer{
+    margin-top: 40px;
     padding: 4px;
     background: white;
     color: gray;
@@ -54,7 +57,7 @@ aside{
     margin-left: 900px;
     width: 140px;
     position: sticky;
-    top: 16px;
+    top: 62px;
 }
 .sidebox{
     box-sizing: border-box;
@@ -96,7 +99,7 @@ aside{
     }
 }
 
-@media(max-width: 620px){
+@media(max-width: 760px){
     main{
         margin: auto;
     }
