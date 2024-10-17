@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    font-family: helvetica;
+    color: white;
+    font-size: 24px;
+}
+main{
+    margin: auto;
+    width: 900px;
+}
+img{
+    max-width: 100%;
+    height: 356px;
+}
+#cat{
+    box-sizing: border-box;
+    background: blue;
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+    float: left;
+}
+#dog{
+    box-sizing: border-box;
+    background: green;
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+    float: right;
+}
+button{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    background: red;
+    border: solid 2px black;
+    display: inline-block;
+}
