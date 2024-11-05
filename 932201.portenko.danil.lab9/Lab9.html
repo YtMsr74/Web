@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Lab9</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div id="display"></div>
+            <table id="calculator">
+                <tr>
+                    <td><button onclick="numClick(7)">7</button></td>
+                    <td><button onclick="numClick(8)">8</button></td>
+                    <td><button onclick="numClick(9)">9</button></td>
+                    <td><button onclick="opClick('/')">/</button></td>
+                    <td><button onclick="clearRes()">C</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="numClick(4)">4</button></td>
+                    <td><button onclick="numClick(5)">5</button></td>
+                    <td><button onclick="numClick(6)">6</button></td>
+                    <td><button onclick="opClick('*')">*</button></td>
+                    <td><button onclick="backspace()">&#8592</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="numClick(1)">1</button></td>
+                    <td><button onclick="numClick(2)">2</button></td>
+                    <td><button onclick="numClick(3)">3</button></td>
+                    <td><button onclick="opClick('-')">-</button></td>
+                    <td rowspan="2"><button onclick="calculate()" style="height: 152px;">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="numClick('0')" style="width: 152px">0</button></td>
+                    <td><button onclick="dotClick()">.</button></td>
+                    <td><button onclick="opClick('+')">+</button></td>
+                </tr>
+            </table>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

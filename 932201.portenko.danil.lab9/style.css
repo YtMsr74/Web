@@ -1,0 +1,31 @@
+*{
+    font-size: 38px;
+    font-family: Helvetica;
+}
+main{
+    box-sizing: border-box;
+    width: 454px;
+    padding: 20px;
+    border: solid 5px #6dacd5;
+}
+button{
+    width: 70px;
+    height: 70px;
+    margin-right: 2px;
+    margin-top: 8px;
+}
+#display{
+    box-sizing: border-box;
+    width: 400px;
+    min-height: 61px;
+    padding: 8px 10px;
+    text-align: right;
+    background: white;
+    border: solid 1px black;
+}
+table{
+    margin-left: -3px;
+}
+td{
+    padding-right: 7px;
+}
