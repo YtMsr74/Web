@@ -26,6 +26,11 @@ function numClick(num){
 }
 
 function opClick(op){
+    const operations = /[+-/*]/;
+    check = display.textContent.slice(-2);
+    if (operations.test(check)) {
+        display.textContent = display.textContent.slice(0,-2);
+    }
     result = display.textContent;
     display.textContent = result + " " + op + " ";
 }
