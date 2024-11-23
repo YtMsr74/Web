@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "ViewBag Calc";
+}
+
+<div>
+    <h1>@ViewData["Title"]</h1>
+    <div><b>Rand Value First : @ViewBag.Num1</b></div>
+    <div><b>Rand Value Second : @ViewBag.Num2</b></div>
+    <div><b>Add : </b></div>
+    <div>@ViewBag.Num1 + @ViewBag.Num2 = @ViewBag.Add</div>
+    <div><b>Sub : </b></div>
+    <div>@ViewBag.Num1 - @ViewBag.Num2 = @ViewBag.Sub</div>
+    <div><b>Mult : </b></div>
+    <div>@ViewBag.Num1 * @ViewBag.Num2 = @ViewBag.Mult</div>
+    <div><b>Div : </b></div>
+    <div>@ViewBag.Num1 / @ViewBag.Num2 = @ViewBag.Div</div>
+</div>
