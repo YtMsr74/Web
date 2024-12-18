@@ -1,0 +1,25 @@
+﻿@model Web12.Models.CalcModel
+
+@{
+    ViewData["Title"] = "ModelParameters";
+}
+
+<form asp-action="ModelSeperate" asp-controller="Home">
+    <div>
+        <h1>@ViewData["Title"]</h1>
+        <input asp-for="Num1" /> <br />
+        <select asp-for="Operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select> <br />
+        <input asp-for="Num2" /> <br />
+        <input type="submit" value="Submit" />
+    </div>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p>@ViewBag.Error</p>
+}

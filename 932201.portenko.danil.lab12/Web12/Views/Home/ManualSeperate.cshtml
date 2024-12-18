@@ -1,0 +1,26 @@
+﻿@using Web12.Models
+
+@{
+    ViewData["Title"] = "ManualSeperate";
+    var operList = new List<SelectListItem>
+    {
+    new SelectListItem { Value = "+", Text = "+" },
+    new SelectListItem { Value = "-", Text = "-" },
+    new SelectListItem { Value = "*", Text = "*" },
+    new SelectListItem { Value = "/", Text = "/" },
+    };
+}
+
+@using (Html.BeginForm("ManualSeperate", "Home", FormMethod.Post))
+{
+    <h1>@ViewData["Title"]</h1>
+    <div>@Html.TextBox("num1", "", new { Type = "text" })</div>
+    <div>@Html.DropDownList("operation", operList)</div>
+    <div>@Html.TextBox("num2", "", new { Type = "text" })</div>
+    <div><input type="submit" value="Submit" /></div>
+}
+
+@if (ViewBag.Error != null)
+{
+    @ViewBag.Error
+}
