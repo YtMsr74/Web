@@ -38,7 +38,7 @@ namespace Web12.Controllers
             }
 			else
 			{
-				ViewBag.Error = "Ошибка в введённых числах";
+				ViewBag.Error = "ГЋГёГЁГЎГЄГ  Гў ГўГўГҐГ¤ВёГ­Г­Г»Гµ Г·ГЁГ±Г«Г Гµ";
 				return View();
 			}
 		}
@@ -47,8 +47,8 @@ namespace Web12.Controllers
 		public IActionResult ModelParameters()
 		{ 
 			return View();
-        }
-        [HttpPost]
+        	}
+        	[HttpPost]
 		public IActionResult ModelParameters(double num1, double num2, string operation)
 		{
 			ViewBag.Resutl = Calculate(num1, num2, operation);
@@ -71,7 +71,7 @@ namespace Web12.Controllers
             }
             else
             {
-                ViewBag.Error = "Ошибка в введённых числах";
+                ViewBag.Error = "ГЋГёГЁГЎГЄГ  Гў ГўГўГҐГ¤ВёГ­Г­Г»Гµ Г·ГЁГ±Г«Г Гµ";
                 return View();
             }
         }
@@ -112,10 +112,10 @@ namespace Web12.Controllers
                     }
 					else
 					{
-                        return $"Деление на ноль";
+                        return $"Г„ГҐГ«ГҐГ­ГЁГҐ Г­Г  Г­Г®Г«Гј";
                     }
             }
-			return $"ошибка";
+			return $"Г®ГёГЁГЎГЄГ ";
 		}
 	}
 }
