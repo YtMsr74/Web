@@ -33,12 +33,12 @@ namespace Web12.Controllers
 			var formOper = form["operation"];
 			if (double.TryParse(form1, out double num1) && double.TryParse(form2, out double num2))
 			{
-                ViewBag.Result = Calculate(num1, num2, formOper);
-                return View("Result");
-            }
+                		ViewBag.Result = Calculate(num1, num2, formOper);
+                		return View("Result");
+            		}
 			else
 			{
-				ViewBag.Error = "Îøèáêà â ââåä¸ííûõ ÷èñëàõ";
+				ViewBag.Error = "Ошибка в введённых данных";
 				return View();
 			}
 		}
@@ -62,21 +62,21 @@ namespace Web12.Controllers
 		}
 
 		[HttpPost, ActionName("ManualSeperate")]
-        public IActionResult ManualSeperatePost()
-        {
-            if (double.TryParse(Request.Form["num1"], out double num1) && double.TryParse(Request.Form["num2"], out double num2))
-            {
-                ViewBag.Result = Calculate(num1, num2, Request.Form["operation"]);
-                return View("Result");
-            }
-            else
-            {
-                ViewBag.Error = "Îøèáêà â ââåä¸ííûõ ÷èñëàõ";
-                return View();
-            }
-        }
+        	public IActionResult ManualSeperatePost()
+        	{
+            		if (double.TryParse(Request.Form["num1"], out double num1) && double.TryParse(Request.Form["num2"], out double num2))
+           		{
+                		ViewBag.Result = Calculate(num1, num2, Request.Form["operation"]);
+                		return View("Result");
+            		}
+            		else
+            		{
+                		ViewBag.Error = "Ошибка в введённых данных";
+                		return View();
+           		}
+        	}
 
-        [HttpGet]
+        	[HttpGet]
 		public IActionResult ModelSeperate()
 		{
 			return View();
@@ -102,20 +102,20 @@ namespace Web12.Controllers
 				case "+":
 					return $"{num1} + {num2} = " + (num1 + num2);
 				case "-":
-                    return $"{num1} - {num2} = " + (num1 - num2);
+                   			return $"{num1} - {num2} = " + (num1 - num2);
 				case "*":
-                    return $"{num1} * {num2} = " + (num1 * num2);
+                    			return $"{num1} * {num2} = " + (num1 * num2);
 				case "/":
 					if (num2 != 0)
 					{
 						return $"{num1} / {num2} = " + (num1 / num2);
-                    }
+                    			}
 					else
 					{
-                        return $"Äåëåíèå íà íîëü";
-                    }
-            }
-			return $"îøèáêà";
+                        			return $"Деление на ноль";
+                    			}
+            		}
+			return $"ошибка";
 		}
 	}
 }
