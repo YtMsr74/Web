@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Quiz results";
+}
+
+<div>
+    <h1>@ViewData["Title"]</h1>
+    <h2>Right answers @ResultSheet.correct out of @ResultSheet.total</h2>
+    @{
+        int i = 0;
+        foreach (Question question in ResultSheet.questionList)
+        {
+            i++;
+            <div>@i. @question.eq @question.guess</div>
+        }
+    }
+</div>
